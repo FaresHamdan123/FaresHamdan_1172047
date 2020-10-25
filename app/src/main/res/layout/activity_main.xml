@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:background="#FFFFFF"
+    android:layout_margin="8dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/film"
+
+        ></ImageView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <CheckBox
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkTitle"
+            android:onClick="checkTitleOnClick">
+
+        </CheckBox>
+
+        <TextView
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginRight="8dp"
+            android:text="Title"
+            android:textSize="25dp"></TextView>
+
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+
+            ></EditText>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkYear"
+            android:onClick="checkYearOnClick"
+            android:layout_gravity="center">
+
+        </CheckBox>
+
+        <TextView
+
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="year"
+            android:layout_gravity="center"
+            android:textSize="25dp"></TextView>
+
+        <Spinner
+            android:id="@+id/spnYear"
+            android:layout_width="229dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"></Spinner>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkGenre"
+            android:onClick="checkGenreOnClick"
+            android:layout_gravity="center">
+
+        </CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre"
+            android:textSize="25dp"
+            android:layout_gravity="center"></TextView>
+
+
+        <Spinner
+            android:id="@+id/spngenre"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"></Spinner>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+    <Button
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/btnSubmit"
+        android:onClick="btnSearchOnClick"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        ></Button>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/txtView"
+                android:textSize="25dp"
+                ></TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
